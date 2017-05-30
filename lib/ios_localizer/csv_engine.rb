@@ -64,7 +64,7 @@ module IOSLocalizer
         row.values
       end
       array_for_output.insert(0,["file","UI element ID","UI element text"])
-      File.open("#{File.dirname(csv_file)}/failed_keys_#{target_key}.csv", "w") {|f| f.write(array_for_output.inject([]) { |csv, row|  csv << CSV.generate_line(row) }.join(""))}
+      File.open("#{File.dirname(csv_file)}/failed_keys_#{target_key}.csv", "w") { |f| f.write(array_for_output.inject([]) { |csv, row|  csv << CSV.generate_line(row) }.join("")) }
       puts "Failed keys write into file failed_keys_#{target_key}.csv\n\n"
       puts "\n\n"
       puts "xliff-file saved"
@@ -72,9 +72,3 @@ module IOSLocalizer
     end
   end
 end
-
-
-# xliff_file = File.expand_path("../../../data/ru.xliff", __FILE__)
-# csv_file = File.expand_path("../../../data/dictionary.csv", __FILE__)
-# IOSLocalizer::CSVEngine.analyse_csv csv_file
-# # IOSLocalizer::CSVEngine.convert xliff_file, csv_file, "ios_key", "ru"

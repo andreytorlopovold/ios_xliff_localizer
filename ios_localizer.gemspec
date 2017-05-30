@@ -8,11 +8,11 @@ Gem::Specification.new do |spec|
   spec.email         = 'torlopov.andrey@gmail.com'
   spec.homepage      = 'https://github.com/Torlopov-Andrey/ios_localizer.git'
   spec.license       = 'MIT'
-
   spec.files         = [
     "lib/ios_localizer.rb",
     "lib/ios_localizer/csv_engine.rb"
   ]
+
   spec.requirements = %w[]
   spec.executables.push 'ios_localizer'
 end
