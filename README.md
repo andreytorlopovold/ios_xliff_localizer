@@ -6,14 +6,14 @@ Localizer for ios application. Create xliff-file to import in your project with 
 # Install
 
 ```bash
-gem install ios_localizer
+gem install ios_xliff_localizer
 ```
 
 # How it use
 
-* For help, just execute `ios_localizer` in terminal.
-* For inspect your .csv file execute:  `ios_localizer your_csv_file`
-* For convert your file execute:  `ios_localizer xliff_file csv_file SOURCE_FIELD TARGET_FIELD`
+* For help, just execute `ios_xliff_localizer` in terminal.
+* For inspect your .csv file execute:  `ios_xliff_localizer your_csv_file`
+* For convert your file execute:  `ios_xliff_localizer xliff_file csv_file SOURCE_FIELD TARGET_FIELD`
 
 ## Examples
 You have file `dictionary.csv` with 5 fields: `android_keys`, `ios_keys`, `en`, `ru`, `fr`.
@@ -30,10 +30,10 @@ For example, look at the table 1.
 And you need convert `ios_keys` into russian language (key `ru`) in your `en.xliff` file.
 <br>Your command will be:<br>
 ```bash
-ios_localizer en.xliff dictionary.csv ios_keys ru
+ios_xliff_localizer en.xliff dictionary.csv ios_keys ru
 ```
 <br>Description:
-* ios_localizer        - gem name
+* ios_xliff_localizer        - gem name
 * en.xliff             - path to your .xliff file
 * dictionary.csv       - path to your .csv file
 * ios_keys             - source field. Field in dictionary which tool will use to find in xliff file

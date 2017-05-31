@@ -3,7 +3,7 @@
 require 'csv'
 require 'xliffer'
 
-module IOSLocalizer
+module IOSXliffLocalizer
 
   class CSVEngine
 
