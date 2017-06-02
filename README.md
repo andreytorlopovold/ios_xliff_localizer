@@ -1,5 +1,7 @@
 # IOS localizer
 
+**First of all, it's my first work. And if you find bugs write me, please! :)**
+
 Localizer for ios application. Create xliff-file to import in your project with translate values from dictionary (csv).<br><br>
 **Warning! If xliff file don't have target language, it will convert into english target language.**
 
