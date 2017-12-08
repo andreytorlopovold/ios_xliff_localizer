@@ -14,6 +14,11 @@ Gem::Specification.new do |spec|
     "lib/ios_xliff_localizer/csv_engine.rb"
   ]
 
+  spec.add_runtime_dependency "xliffer",
+    [">= 0"]
+  spec.add_development_dependency "xliffer",
+    [">= 0"]
+  
   spec.requirements = %w[]
   spec.executables.push 'ios_xliff_localizer'
 end
